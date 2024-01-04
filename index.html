@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>88gravity.com/home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<!-- ----------------------------------------------------------- -->
+
+<body>
+
+  <!-- ------------------------Navigation Bar----------------------------------- -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">88gravity</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Topics
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Technology</a></li>
+              <li><a class="dropdown-item" href="#">Web Devolopement</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Support</a></li>
+              <li><a class="dropdown-item" href="#">Write for us</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+
+          <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignupModal">Signup</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--------------------------Login Modal --------------------------->
+
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="LoginModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!--------------------------inside login form --------------------------->
+          <form>
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+          <!--------------------------inside login form end --------------------------->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------------Sign Up Modal --------------------------->
+
+  <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="SignupModalLabel">Create an Account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!--------------------------inside login form --------------------------->
+          <form>
+            <div class="row mb-3">
+              <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="ainputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="ainputPassword3">
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create Acctount</button>
+          </form>
+          <!--------------------------inside login form end --------------------------->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------------------Slider----------------------------------- -->
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Web Devolopement</h3>
+          <p>A huge team of excellent web developers, having more than 2+ years of working knowledge</p>
+          <button class="btn btn-danger">React</button>
+          <button class="btn btn-primary">PHP</button>
+          <button class="btn btn-success">HTML</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Graphic desiners & Video Editors</h5>
+          <p>A huge team of excellent Graphic desiners & Video Editors, having more than 2+ years of working knowledge
+          </p>
+          <button class="btn btn-danger">Images</button>
+          <button class="btn btn-primary">Banners</button>
+          <button class="btn btn-success">Videos</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block ">
+          <h5>SEO & Social & Ecommerce</h5>
+          <p>A huge team of excellent SEO & Social & Ecommerce executives, having more than 2+ years of working
+            knowledge</p>
+          <button class="btn btn-danger">SEO</button>
+          <button class="btn btn-primary">E-Com</button>
+          <button class="btn btn-success">Social</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- ------------------------External link boxes / popular posts----------------------------------- -->
+
+  <div class="container my-4">
+    <div class="row mb-2 mx-5">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-danger-emphasis">World</strong>
+            <h4 class="mb-0">Global Coding</h4>
+            <div class="mb-1 text-body-secondary">Nov 12</div>
+            <p class="card-text mb-auto">Let's meet with the co-coders round the glob.</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="coding.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Python</strong>
+            <h4 class="mb-0">Learn Python</h4>
+            <div class="mb-1 text-body-secondary">Nov 11</div>
+            <p class="mb-auto">Python is the heart of AI. Let's know more aobut it.</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="python.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row mb-2 mx-5">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-warning-emphasis">Video Editing</strong>
+            <h4 class="mb-0">Editing Competition</h4>
+            <div class="mb-1 text-body-secondary">Nov 12</div>
+            <p class="card-text mb-auto">Prove your video understanding by participating in this competition.</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="video.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Design</strong>
+            <h4 class="mb-0">Designing Test</h4>
+            <div class="mb-1 text-body-secondary">Nov 11</div>
+            <p class="mb-auto">You can prove your skills by giving this test.</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="design.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------------------Content------------------------------------ -->
+
+  <div class="container my-4">
+    <div class="row featurette d-flex align-items-center justify-content-center">
+      <div class="col-md-8">
+        <h2 class="featurette-heading fw-normal lh-1">Give your website's responsibilites to us. <span
+            class="text-body-secondary">We will handle all the difficulties for you.</span></h2>
+        <p class="lead">You can be free from your difficulties. We will manage your SEO, Developement and all, you only
+          will get your profits</p>
+      </div>
+      <div class="col-md-4">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+          height="400" src="a.jpg" alt="">
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-8 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Get a advertizement maker on your location. <span
+            class="text-body-secondary">Our team will make a detailed blog.</span></h2>
+        <p class="lead">You can get recognised by go viral on the social media and in advertizement world.</p>
+      </div>
+      <div class="col-md-4 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+          height="400" src="b.jpg" alt="">
+
+      </div>
+    </div>
+    <hr>
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-8">
+        <h2 class="featurette-heading fw-normal lh-1">Leave your sales on us. <span class="text-body-secondary">Pack
+            your bags and visit places, we will takecare of your sales</span></h2>
+        <p class="lead">We can increase your sales. No matter what your product is. We will figure it out how to
+          increase your sales and what should be your target area of people.</p>
+      </div>
+      <div class="col-md-4">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+          height="400" src="c.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------------------Example------------------------------------ -->
+
+  <!-- <section class="">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4"> {{in this way we will use the sections}}
+
+      </div>
+
+    </div>
+  </div>
+  </section> -->
+
+  <!-- ---------------------Footer-------------------------------------- -->
+
+  <hr>
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2024–2027 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+
+  <!-- ----------------------------------------------------------- -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
